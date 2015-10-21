@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0" >
+        <TableRow>
+
+            <LinearLayout
+                android:id="@+id/homebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:background="#e4dcdc">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="@android:color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/home"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/tweetbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="2dp"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:background="#dce4e8">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Tweet"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bird" />
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+
+    <ListView android:id="@+id/homeList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

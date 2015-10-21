@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical"
+    android:background="#e4dcdc">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0" >
+        <TableRow >
+            <LinearLayout
+                android:id="@+id/homebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:background="#fff4f4">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/home"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/tweetbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="2dp"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:background="#dae8f2">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Tweet"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/bird" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What do you want to say?"
+        android:textColor="#000000"/>
+
+    <EditText android:id="@+id/tweettext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:singleLine="false"
+        android:background="@android:color/white" />
+
+    <Button android:id="@+id/dotweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>
